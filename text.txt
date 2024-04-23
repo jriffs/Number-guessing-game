@@ -1,0 +1,18 @@
+Application Flow:
+The user starts the cli tool using the necessary commands and passing 2 variables [rounds, range]
+|__ The first for the number of rounds and the latter for the range to guess from
+    |__ Then a random number is generated
+        |__ Then the user is asked to input his guess
+            |__ Then we check if the users guess matches the number generated
+                |__ If yes then it is counted as a win with details displayed in the terminal
+                    |__ Else it is counted as a loss and the same thing is done as with the inverse
+                        |__ At the end of the specified rounds, the result is shown to the user.
+
+
+[First Iteration]
+
+Procedural implementation flow:
+1. create CliParams struct: to house the variables passed and use it throughout the program
+2. create the build method to build CLI params struct with arguments
+3. unit Testing
+
